@@ -3,7 +3,7 @@ import random
 import threading
 
 def send_sms(number, message):
-    mAPI = f"https://fbe39a46-950a-4272-9c8b-a2c841a5252a-00-vsr1s40oysjd.riker.replit.dev/?receiver={number}&text={message}"
+    mAPI = f"http://www.teamdcs.xyz/SMS/sms.php?num={number}&msg={message}"
     resp = requests.get(mAPI)
     print(resp.text)
 
